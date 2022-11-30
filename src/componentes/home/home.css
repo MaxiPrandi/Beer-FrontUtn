@@ -1,0 +1,56 @@
+.productos {
+  margin-left: 10px;
+  padding-right: 15px;
+}
+
+.productos .row {
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.caja {
+  background-color: rgb(39, 39, 39);
+  border: 4px solid rgb(8, 107, 236);
+  padding: 10px 10px 20px 10px;
+  border-radius: 10%;
+  width: 100%;
+  margin-top: 20px;
+}
+.caja:hover {
+  border: 4px solid rgb(226, 151, 11);
+}
+
+.precio {
+  color: rgb(8, 107, 236);
+  text-align: center;
+  margin-right: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 2px;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+.producto-index {
+  color: white;
+  padding-left: 8px;
+}
+
+.boton1 {
+  background-color: rgb(47, 161, 2);
+  margin-right: 15px;
+  margin-left: 6px;
+  font-weight: bold;
+}
+.boton2 {
+  background-color: rgb(226, 151, 11);
+  font-weight: bold;
+}
+
+.textoCaja {
+  height: 100px;
+}
