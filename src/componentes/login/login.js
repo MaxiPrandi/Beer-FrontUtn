@@ -20,6 +20,7 @@ const Login = () => {
   const onSubmit = (data, e) => {
     console.log(data);
     setEntradas([...Entradas, data]);
+    e.target.reset();
   };
 
   return (
