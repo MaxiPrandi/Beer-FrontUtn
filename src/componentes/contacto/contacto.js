@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 import gif from "../assests/cheers.gif";
 
 function alerta() {
-  alert("Tu comentario fue enviado con exito!!!");
+  alert(" Tu comentario fue enviado con exito!!!\n Recibiras un Email a la brevedad \n Muchas gracias!");
 }
 
 export const Contacto = () => {
