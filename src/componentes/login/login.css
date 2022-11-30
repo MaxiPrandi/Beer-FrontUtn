@@ -3,7 +3,7 @@
   justify-content: end;
   align-items: center;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 .items {
   display: flex;
@@ -38,3 +38,19 @@
   color: rgb(255, 254, 254);
   transition: 1s all;
 }
+
+.texto {
+  margin-top: 40px;
+  color: rgb(241, 159, 6);
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: darkslategray;
+ width: 100%;
+
+padding-right: 20px;
+ 
+ 
+ }
+ .texto p{
+  width: 100%;
+ }
