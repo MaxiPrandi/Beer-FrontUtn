@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
           <div className="git">
             <p className="text-light">Maximiliano Prandi © 2022 GitHub, Inc.</p>
-          <a href="https://https://github.com/Maxiomega" target="_blank"rel="noreferrer noopener" >
+          <a href="https://github.com/Maxiomega/" target="_blank"rel="noreferrer noopener" >
               <box-icon size="lg" type="logo" name="github"></box-icon>
             </a>
             </div>
