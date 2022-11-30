@@ -28,7 +28,7 @@ const Carrusel = () => {
         />
 
         <Carousel.Caption>
-          <h1 className="text-dark fs-1  fw-bold mb-4">...momento para...</h1>
+          <h1 className="text-dark fs-1  fw-bold mb-4">...buen momento para...</h1>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
