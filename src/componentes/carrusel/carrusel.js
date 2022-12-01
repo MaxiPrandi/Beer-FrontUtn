@@ -13,7 +13,7 @@ const Carrusel = () => {
           className="d-block w-100"
           src={fotoProducto}
           alt="First slide"
-          id="fotop"
+          
         />
       
       </Carousel.Item>
@@ -22,7 +22,7 @@ const Carrusel = () => {
           className="d-block w-100"
           src={fotoProducto2}
           alt="First slide"
-          id="fotop"
+          
         />
 
        
@@ -32,7 +32,7 @@ const Carrusel = () => {
           className="d-block w-100"
           src={fotoProducto3}
           alt="First slide"
-          
+        
         />
 
        
