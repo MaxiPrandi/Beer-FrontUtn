@@ -32,7 +32,7 @@ const Carrusel = () => {
           className="d-block w-100"
           src={fotoProducto3}
           alt="First slide"
-          id="fotop"
+          
         />
 
        
