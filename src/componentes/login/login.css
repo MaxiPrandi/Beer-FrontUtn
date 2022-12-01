@@ -21,6 +21,7 @@
   border-radius: 0.25em;
   margin-bottom: 10px;
   width: 100%;
+  
 }
 
 .submit {
@@ -54,3 +55,18 @@ padding-right: 20px;
  .texto p{
   width: 100%;
  }
+ .inputselect{
+  background-color: rgb(241, 159, 6);
+  padding: 10px 3px;
+  border: none;
+  border-bottom: 1px solid;
+  font-weight: bold;
+  border-radius: 0.25em;
+  margin-bottom: 10px;
+  width: 100%;
+ }
+.inputselect option{
+  background-color: gray;
+  font-weight: bold;
+  text-align: center;
+}

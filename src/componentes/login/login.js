@@ -96,13 +96,13 @@ const Login = () => {
                 )}
               </div>
               <div>
-                <label className="text-light fw-bolder">
+                <label className="text-light fw-bolder mb-3">
                   {" "}
-                  Cerveza preferida{" "}
+                  Elegi tu cerveza preferida{" "}
                 </label>
                 <select
                   {...register("cerveza")}
-                  className="input"
+                  className="inputselect"
                   name="cerveza"
                 >
                   <option value="Blonde"> Blonde </option>
