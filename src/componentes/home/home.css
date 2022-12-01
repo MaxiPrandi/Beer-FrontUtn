@@ -42,8 +42,8 @@
 
 .boton1 {
   background-color: rgb(47, 161, 2);
-  margin-right: 15px;
-  margin-left: 6px;
+  margin-right: 10px;
+  margin-left: 1px;
   font-weight: bold;
 }
 .boton2 {
@@ -53,4 +53,9 @@
 
 .textoCaja {
   height: 100px;
+}
+.botones{
+  
+  justify-content: center;
+  display: flex;
 }

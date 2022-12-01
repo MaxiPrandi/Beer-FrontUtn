@@ -39,15 +39,17 @@ const Home = () => {
                   color="white"
                 ></box-icon>
               </p>
-              <h5> Cervezas en el carrito: {count}</h5>
+              <h5 className="text-center"> Cervezas en el carrito: {count}</h5>
             </div>
 
-            <Button className="boton1" onClick={() => setCount(count + 1)}>
-              Agregar Birra
-            </Button>
-            <Button className="boton2" onClick={() => setCount(count - 1)}>
-              Quitar Birra
-            </Button>
+            <div className="botones">
+              <Button className="boton1" onClick={() => setCount(count + 1)}>
+                Agregar Birra
+              </Button>
+              <Button className="boton2" onClick={() => setCount(count - 1)}>
+                Quitar Birra
+              </Button>
+            </div>
           </div>
         </Col>
 
@@ -71,15 +73,16 @@ const Home = () => {
                   color="white"
                 ></box-icon>
               </p>
-              <h5> Cervezas en el carrito: {count}</h5>
+              <h5 className="text-center"> Cervezas en el carrito: {count}</h5>
             </div>
-
+            <div className="botones">
             <Button className="boton1" onClick={() => setCount(count + 1)}>
               Agregar Birra
             </Button>
             <Button className="boton2" onClick={() => setCount(count - 1)}>
               Quitar Birra
             </Button>
+            </div>
           </div>
         </Col>
         {/* columna 3 */}
@@ -105,15 +108,16 @@ const Home = () => {
                   color="white"
                 ></box-icon>
               </p>
-              <h5> Cervezas en el carrito: {count}</h5>
+              <h5 className="text-center"> Cervezas en el carrito: {count}</h5>
             </div>
-
+            <div className="botones">
             <Button className="boton1" onClick={() => setCount(count + 1)}>
               Agregar Birra
             </Button>
             <Button className="boton2" onClick={() => setCount(count - 1)}>
               Quitar Birra
             </Button>
+            </div>
           </div>
         </Col>
       </Row>
@@ -141,15 +145,16 @@ const Home = () => {
                   color="white"
                 ></box-icon>
               </p>
-              <h5> Cervezas en el carrito: {count}</h5>
+              <h5 className="text-center"> Cervezas en el carrito: {count}</h5>
             </div>
-
+            <div className="botones">
             <Button className="boton1" onClick={() => setCount(count + 1)}>
               Agregar Birra
             </Button>
             <Button className="boton2" onClick={() => setCount(count - 1)}>
               Quitar Birra
             </Button>
+            </div>
           </div>
         </Col>
 
@@ -176,15 +181,16 @@ const Home = () => {
                   color="white"
                 ></box-icon>
               </p>
-              <h5> Cervezas en el carrito: {count}</h5>
+              <h5 className="text-center"> Cervezas en el carrito: {count}</h5>
             </div>
-
+            <div className="botones">
             <Button className="boton1" onClick={() => setCount(count + 1)}>
               Agregar Birra
             </Button>
             <Button className="boton2" onClick={() => setCount(count - 1)}>
               Quitar Birra
             </Button>
+            </div>
           </div>
         </Col>
         {/* columna 3 */}
@@ -210,15 +216,16 @@ const Home = () => {
                   color="white"
                 ></box-icon>
               </p>
-              <h5> Cervezas en el carrito: {count}</h5>
+              <h5 className="text-center"> Cervezas en el carrito: {count}</h5>
             </div>
-
+            <div className="botones">
             <Button className="boton1" onClick={() => setCount(count + 1)}>
               Agregar Birra
             </Button>
             <Button className="boton2" onClick={() => setCount(count - 1)}>
               Quitar Birra
             </Button>
+            </div>
           </div>
         </Col>
       </Row>
