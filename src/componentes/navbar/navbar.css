@@ -64,9 +64,38 @@
   flex-direction: row;
   justify-content: space-between;
   margin-left: -150px;
-  margin-top: -15px;
+  margin-top: -40px;
 }
+
+#linky{
+  position: relative;
+  color: var(--light);
+  text-decoration: none;
+  padding: 7px 0;
+  font-size: 1.2rem;
+}
+#linky::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background: rgb(226, 151, 11);
+  transition: 0.4s ease-out;
+}
+#linky:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+
+
 #dropdown {
-  color: white;
-  font-weight: bold;
+  position: relative;
+  color: var(--light);
+  text-decoration: none;
+  padding: 7px 0;
+  font-size: 1.2rem;
+  
 }

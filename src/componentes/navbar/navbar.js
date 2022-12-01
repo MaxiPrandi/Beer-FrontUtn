@@ -31,12 +31,12 @@ const NavBar = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link className="text-light fw-bolder" as={Link} to="/">
+              <Nav.Link className="text-light fw-bolder" as={Link} to="/" id="linky">
                 Shop
               </Nav.Link>
 
-              <NavDropdown title="Cervezas" id="dropdown">
-                <NavDropdown.Item as={Link} to="/elaboracion">
+              <NavDropdown className="text-light fw-bolder" title="Cervezas" id="dropdown">
+                <NavDropdown.Item  as={Link} to="/elaboracion">
                   Elaboracion
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/maduracion">
@@ -49,14 +49,14 @@ const NavBar = () => {
               <Nav.Link
                 className="text-light fw-bolder"
                 as={Link}
-                to="/contacto"
+                to="/contacto"id="linky"
               >
                 Contacto
               </Nav.Link>
               <Nav.Link
                 className="text-primary fw-bolder"
                 as={Link}
-                to="/login"
+                to="/login" id="linky"
               >
                 Login
               </Nav.Link>

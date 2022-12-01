@@ -3,10 +3,8 @@ import "./contacto.css";
 import { Container, Col, Row } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import gif from "../assests/cheers.gif";
+import Enviado from './modal.js';
 
-function alerta() {
-  alert(" Tu comentario fue enviado con exito!!!\n Recibiras un Email a la brevedad \n Muchas gracias!");
-}
 
 export const Contacto = () => {
   const form = useRef();
@@ -72,13 +70,10 @@ export const Contacto = () => {
               rows="5"
               required
             />
-            <input
-              type="submit"
-              value="Enviar mensaje"
-              className="submit"
-              onClick={alerta}
-            />
+            <Enviado />
+        
           </form>
+          
         </Col>
         <Col xs="10" sm="4" md="3">
           <div className="gif">
@@ -86,6 +81,7 @@ export const Contacto = () => {
           </div>
         </Col>
       </Row>
+     
     </Container>
   );
 };

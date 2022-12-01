@@ -1,12 +1,9 @@
 import { useForm } from "react-hook-form";
 import "./login.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import { useState } from "react";
-/* 
-function alerta() {
-  alert("Gracias");
-}
- */
+
+/* LOGIN */
 const Login = () => {
   const {
     register,
@@ -22,11 +19,16 @@ const Login = () => {
     setEntradas([...Entradas, data]);
     e.target.reset();
   };
+  /*  modal funcion */
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <Container fluid className="form">
-      
-      <Row >
+      <Row>
         <Col xs="8" sm="10" md="8">
           <div>
             <form onSubmit={handleSubmit(onSubmit)} className="items">
@@ -96,7 +98,7 @@ const Login = () => {
                 )}
               </div>
               <div>
-                <label className="text-light fw-bolder mb-3">
+                <label className="text-light fw-bolder mb-3 fs-4">
                   {" "}
                   Elegi tu cerveza preferida{" "}
                 </label>
@@ -112,43 +114,41 @@ const Login = () => {
                   <option value="Black Ipa"> Red Ipa </option>
                   <option value="Weisse"> Weisse </option>
                 </select>
+                <div className="text-light fw-bold"> Tu cerveza es: {watch("cerveza")}</div>
               </div>
 
-              <input
+              <Button
+                variant="primary"
                 type="submit"
-                value="Login"
+                value="Enviar"
                 className="submit"
-                /*   onClick={alerta} */
-              />
+                onClick={handleShow}
+              >
+                Entra a tu cuenta
+              </Button>
+              {Entradas.map((item) => (
+                <Modal show={show} onHide={handleClose} animation={false}>
+                  <Modal.Header closeButton>
+                    <Modal.Title>The Beer</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    Hola {item.nombre} {item.apellido} <br></br> Te enviaremos
+                    una invitacion a tu E-mail:  {item.email} <br></br>Asi venis a
+                    tomar una Cerveza {item.cerveza} bien helada!<br></br>Te esperamos!
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="primary" onClick={handleClose}>
+                      Cerrar
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+              ))}
             </form>
           </div>
         </Col>
-        </Row>
-        <Row className="texto">
-        <Col xs="8" sm="10" md="8"  >
-          <div >
-            {Entradas.map((item) => (
-              
-              <p>
-                Hola {item.nombre} {item.apellido} , despues te enviaremos una
-                invitacion a: <br></br> {item.email}  para que vengas a tomar una Cerveza {item.cerveza}
-              </p> ))}
-              </div>
-        </Col>
       </Row>
-    
     </Container>
   );
 };
-export default Login;
 
-{
-  /* <ul>
-{Entradas.map((item) => (
-  <li className="text-warning fs-3 fw-bold"> Hola 
-    {item.nombre} - {item.apellido} - {item.email} - Tomamos una {item.cerveza}
-  </li>
-  
-))}
-</ul> */
-}
+export default Login;
