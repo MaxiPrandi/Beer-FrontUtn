@@ -1,6 +1,8 @@
 .productos {
-  margin-left: 10px;
-  padding-right: 15px;
+  margin: 0;
+  padding: 0;
+  
+  width: 100%;
 }
 
 .productos .row {
