@@ -17,12 +17,12 @@ function Enviado() {
 
       <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
-          <Modal.Title>Aviso de confirmación</Modal.Title>
+          <Modal.Title>The Beer</Modal.Title>
         </Modal.Header>
         <Modal.Body>Tu comentario fue enviado con exito!!!<br></br> Recibiras un E-mail a la brevedad <br></br> Muchas gracias!</Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
-            Close
+            Cerrar
           </Button>
 
         </Modal.Footer>
