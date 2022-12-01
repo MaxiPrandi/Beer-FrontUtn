@@ -32,19 +32,19 @@ const Footer = () => {
         <Col xs="12" sm="12" md="3" className="enlaces">
           <Nav style={{ maxHeight: "100px" }} navbarScroll >
             <div>
-              <Nav.Link className="text-light fw-bolder fs-2" as={Link} to="/">
+              <Nav.Link className="text-light fw-bolder fs-5" as={Link} to="/">
                 Shop 
               </Nav.Link>
              
               <Nav.Link
-                className="text-light fw-bolder fs-2"
+                className="text-light fw-bolder fs-5"
                 as={Link}
                 to="/contacto"
               >
                 Contacto
               </Nav.Link>
               <Nav.Link
-                className="text-primary fw-bolder fs-2"
+                className="text-primary fw-bolder fs-5"
                 as={Link}
                 to="/login"
               >

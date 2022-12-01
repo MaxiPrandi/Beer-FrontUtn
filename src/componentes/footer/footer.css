@@ -29,16 +29,16 @@
   width: 300px;
   font-family: "Kanit", sans-serif;
   padding-left: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .mainFooter h5 {
   color: rgb(200, 200, 201);
   font-family: "Kanit", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: italic;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 15px;
+  margin-top: 25px;
   text-align: justify;
   line-height: 25px;
 }
@@ -73,7 +73,7 @@
   flex-direction: column;
   align-items: start;
   margin-bottom: 15px;
-  padding-top: 20px;
+  padding-top: 35px;
 }
 .git {
   margin-top: 50px;
